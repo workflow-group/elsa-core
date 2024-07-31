@@ -29,15 +29,18 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 .vs/
 
+# VS Code/Omnisharp crash dumps
+mono_crash.mem*.blob
+
 #Nuget packages folder
 packages/
 
 #Ignore git-related files
 *.orig
-.gitattributes
 
 #Rider
 .idea
+.run
 
 #wwwroot
 wwwroot/
@@ -48,7 +51,28 @@ node_modules/
 .stylelintrc.yml
 .eslintrc.yml
 
-#github
-.github/
-
+#volatile
 App_Data/
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+.DS_Store
+
+# Fody - auto-generated XML schema
+FodyWeavers.xsd
+
+# Elsa Stencil Components
+src/designer/elsa-workflows-designer/dist
+src/designer/elsa-workflows-designer/www
+src/designer/elsa-workflows-designer/loader
+
+# Created by developers using GNU/Linux
+.directory
+
+src/modules/Elsa.Workflows.Designer/package-lock.json
+
+unlist.sh
+
+# build artifacts
+/artifacts
